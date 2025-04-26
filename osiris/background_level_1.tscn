@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://ctmkbhvvxfvef"]
+[gd_scene format=3 uid="uid://ctmkbhvvxfvef"]
 
 [node name="Background Level 1" type="Node2D"]
 
