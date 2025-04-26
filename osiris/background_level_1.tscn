@@ -1,8 +1,34 @@
-[gd_scene format=3 uid="uid://ctmkbhvvxfvef"]
+[gd_scene load_steps=7 format=4 uid="uid://ctmkbhvvxfvef"]
 
-[node name="Background Level 1" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://bql58dqtb7n5u" path="res://desertMap.tscn" id="1_e4b5q"]
+[ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://irisCharacter.tscn" id="1_grpr4"]
+[ext_resource type="Script" uid="uid://dne3arqosuhvu" path="res://playerScript.gd" id="2_a55pu"]
+[ext_resource type="Texture2D" uid="uid://qogvsal6bcf3" path="res://sandSheet.png" id="2_imkfv"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f45tc"]
+texture = ExtResource("2_imkfv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_e4b5q"]
+tile_size = Vector2i(32, 32)
+sources/2 = SubResource("TileSetAtlasSource_f45tc")
+
+[node name="level1" type="Node2D"]
+
+[node name="backgroundColor" type="ColorRect" parent="."]
 offset_right = 1150.0
 offset_bottom = 645.0
 color = Color(0.290196, 0.364706, 0.054902, 1)
+
+[node name="Terrain" parent="." instance=ExtResource("1_e4b5q")]
+tile_map_data = PackedByteArray("AAABAP3/AgAAAAEAAAABAP7/AgAAAAEAAAABAP//AgABAAEAAAABAAAAAgAAAAEAAAABAAEAAgABAAEAAAABAAIAAgABAAEAAAABAAMAAgABAAEAAAABAAQAAgAAAAEAAAABAAUAAgAAAAEAAAABAAYAAgABAAEAAAA=")
+tile_set = SubResource("TileSet_e4b5q")
+
+[node name="CharacterBody2D" parent="Terrain" instance=ExtResource("1_grpr4")]
+position = Vector2(26, 29)
+script = ExtResource("2_a55pu")

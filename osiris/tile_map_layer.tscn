@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=4 uid="uid://d162ewdipg3yj"]
+
+[ext_resource type="Texture2D" uid="uid://qogvsal6bcf3" path="res://sandSheet.png" id="1_0ugm7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqaso"]
+texture = ExtResource("1_0ugm7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_uuaxm"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_vqaso")
+
+[node name="TileMapLayer" type="TileMapLayer"]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAD+//7/AAAAAAAAAFD///7/AAAAAAAAAFAAAP7/AAAAAAAAAFAAAP//AAAAAAAAAFABAP//AAAAAAAAAFABAAAAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAEAAAAAAAAAAFD//wEAAAAAAAAAAFD//wAAAAAAAAAAAFD+/wAAAAAAAAAAAFD+////AAAAAAAAAFD+/wEAAAAAAAAAAFD/////AAAAAAAAAFABAP7/AAAAAAAAAFABAAEAAAAAAAAAAFA=")
+tile_set = SubResource("TileSet_uuaxm")
