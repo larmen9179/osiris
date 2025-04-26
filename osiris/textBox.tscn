@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://67d1ridsfbir"]
+[gd_scene load_steps=3 format=3 uid="uid://67d1ridsfbir"]
 
 [ext_resource type="Script" uid="uid://1g48kj33mmql" path="res://textController.gd" id="1_5cyme"]
+
+[sub_resource type="Theme" id="Theme_5cyme"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 visible = false
@@ -18,6 +20,7 @@ offset_right = -46.0
 offset_bottom = -34.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = SubResource("Theme_5cyme")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0

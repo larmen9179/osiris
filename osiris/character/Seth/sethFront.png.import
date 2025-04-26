@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcqcbneoa5uqr"
-path="res://.godot/imported/nileRiver.png-fde32a2860debca6f7e480ad0500297a.ctex"
+uid="uid://b8lup0famrrhs"
+path="res://.godot/imported/sethFront.png-9825f6dedf4dceff07312190aa118a95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://nileRiver.png"
-dest_files=["res://.godot/imported/nileRiver.png-fde32a2860debca6f7e480ad0500297a.ctex"]
+source_file="res://character/Seth/sethFront.png"
+dest_files=["res://.godot/imported/sethFront.png-9825f6dedf4dceff07312190aa118a95.ctex"]
 
 [params]
 

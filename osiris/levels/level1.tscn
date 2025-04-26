@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://ctmkbhvvxfvef"]
+[gd_scene load_steps=5 format=4 uid="uid://ctmkbhvvxfvef"]
 
-[ext_resource type="PackedScene" uid="uid://bql58dqtb7n5u" path="res://Terrain.tscn" id="1_61w3m"]
-[ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://character/Isis.tscn" id="1_grpr4"]
-[ext_resource type="Script" uid="uid://dne3arqosuhvu" path="res://character/playerScript.gd" id="2_a55pu"]
+[ext_resource type="PackedScene" uid="uid://bql58dqtb7n5u" path="res://spriteSheets/levelSheet/Terrain.tscn" id="1_61w3m"]
+[ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://character/Isis/Isis.tscn" id="1_grpr4"]
 [ext_resource type="PackedScene" uid="uid://bsbnblymck7f5" path="res://items/chalice/chaliceItem.tscn" id="5_f45tc"]
 [ext_resource type="PackedScene" uid="uid://67d1ridsfbir" path="res://textBox.tscn" id="6_0liky"]
 
@@ -20,7 +19,6 @@ tile_map_data = PackedByteArray("AAD+//7/AAAAAAAAAAD///7/AAAAAAAAAFAAAP7/AAAAAAA
 
 [node name="Isis" parent="." instance=ExtResource("1_grpr4")]
 position = Vector2(26, 29)
-script = ExtResource("2_a55pu")
 
 [node name="chalice" parent="." instance=ExtResource("5_f45tc")]
 scale = Vector2(0.35, 0.35)

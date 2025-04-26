@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dr7xtv71sbcvs"
-path="res://.godot/imported/irisFront.png-a1f95088b913fad2f0b3b183a1a29596.ctex"
+uid="uid://bcqcbneoa5uqr"
+path="res://.godot/imported/nileRiver.png-f02bf24ba649bf094f5f69305386e1f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/irisFront.png"
-dest_files=["res://.godot/imported/irisFront.png-a1f95088b913fad2f0b3b183a1a29596.ctex"]
+source_file="res://spriteSheets/levelSheet/nileRiver.png"
+dest_files=["res://.godot/imported/nileRiver.png-f02bf24ba649bf094f5f69305386e1f0.ctex"]
 
 [params]
 
