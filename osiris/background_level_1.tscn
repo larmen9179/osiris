@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://ctmkbhvvxfvef"]
+[gd_scene load_steps=8 format=4 uid="uid://ctmkbhvvxfvef"]
 
 [ext_resource type="PackedScene" uid="uid://bql58dqtb7n5u" path="res://desertMap.tscn" id="1_e4b5q"]
 [ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://irisCharacter.tscn" id="1_grpr4"]
 [ext_resource type="Script" uid="uid://dne3arqosuhvu" path="res://playerScript.gd" id="2_a55pu"]
 [ext_resource type="Texture2D" uid="uid://qogvsal6bcf3" path="res://sandSheet.png" id="2_imkfv"]
+[ext_resource type="PackedScene" uid="uid://bsbnblymck7f5" path="res://chaliceItem.tscn" id="5_f45tc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f45tc"]
 texture = ExtResource("2_imkfv")
@@ -26,9 +27,12 @@ offset_bottom = 645.0
 color = Color(0.290196, 0.364706, 0.054902, 1)
 
 [node name="Terrain" parent="." instance=ExtResource("1_e4b5q")]
-tile_map_data = PackedByteArray("AAABAP3/AgAAAAEAAAABAP7/AgAAAAEAAAABAP//AgABAAEAAAABAAAAAgAAAAEAAAABAAEAAgABAAEAAAABAAIAAgABAAEAAAABAAMAAgABAAEAAAABAAQAAgAAAAEAAAABAAUAAgAAAAEAAAABAAYAAgABAAEAAAA=")
+tile_map_data = PackedByteArray("AAD+//7/AgAAAAAAAAD///7/AgAAAAAAAAAAAP7/AgAAAAAAAAAAAP//AgAAAAAAAAABAP//AgABAAEAAAABAAAAAgAAAAEAAAAAAAAAAgAAAAAAAAAAAAEAAgAAAAAAAAD//wEAAgAAAAAAAAD//wAAAgAAAAAAAAD+/wAAAgAAAAAAAAD+////AgAAAAAAAAD+/wEAAgAAAAAAAAD/////AgAAAAAAAAABAP7/AgAAAAEAAAABAAEAAgABAAEAAAABAP3/AgAAAAEAAAABAAIAAgABAAEAAAABAAMAAgABAAEAAAABAAQAAgAAAAEAAAABAAUAAgAAAAEAAAABAAYAAgABAAEAAAAAAAIAAgAAAAAAAAAAAAMAAgAAAAAAAAD//wMAAgAAAAAAAAD+/wMAAgAAAAAAAAD+/wIAAgAAAAAAAAD9//7/AgAAAAAAAAD9////AgAAAAAAAAD8////AgAAAAAAAAD8/wAAAgAAAAAAAAD8/wEAAgAAAAAAAAD9/wEAAgAAAAAAAAD9/wIAAgAAAAAAAAD//wIAAgAAAAAAAAD9/wMAAgAAAAAAAAD8/wIAAgAAAAAAAAD9/wAAAgAAAAAAAAD8//7/AgAAAAAAAAD8/wMAAgAAAAAAAAA=")
 tile_set = SubResource("TileSet_e4b5q")
 
-[node name="CharacterBody2D" parent="Terrain" instance=ExtResource("1_grpr4")]
+[node name="Isis" parent="Terrain" instance=ExtResource("1_grpr4")]
 position = Vector2(26, 29)
 script = ExtResource("2_a55pu")
+
+[node name="chalice" parent="Terrain" instance=ExtResource("5_f45tc")]
+scale = Vector2(0.35, 0.35)
