@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=4 uid="uid://ctmkbhvvxfvef"]
+
+[ext_resource type="PackedScene" uid="uid://bql58dqtb7n5u" path="res://Terrain.tscn" id="1_61w3m"]
+[ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://character/Isis.tscn" id="1_grpr4"]
+[ext_resource type="Script" uid="uid://dne3arqosuhvu" path="res://character/playerScript.gd" id="2_a55pu"]
+[ext_resource type="PackedScene" uid="uid://bsbnblymck7f5" path="res://items/chalice/chaliceItem.tscn" id="5_f45tc"]
+[ext_resource type="PackedScene" uid="uid://67d1ridsfbir" path="res://testBox.tscn" id="6_0liky"]
+
+[node name="level1" type="Node2D"]
+
+[node name="backgroundColor" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 645.0
+color = Color(0.290196, 0.364706, 0.054902, 1)
+
+[node name="Terrain" parent="." instance=ExtResource("1_61w3m")]
+tile_map_data = PackedByteArray("AAD+//7/AAAAAAAAAAD///7/AAAAAAAAAFAAAP7/AAAAAAAAAAAAAP//AAAAAAAAAFABAP//AAAAAAAAAFABAAAAAAAAAAAAAGAAAAAAAAAAAAAAAFAAAAEAAAAAAAAAAFD//wEAAAAAAAAAAGD//wAAAAAAAAAAAAD+/wAAAAAAAAAAAFD+////AAAAAAAAAAD+/wEAAAAAAAAAAAD/////AAAAAAAAAGABAP7/AAAAAAAAAGABAAEAAAAAAAAAAAACAP3/AAABAAEAAAACAP7/AAACAAEAAAACAAAAAAABAAEAAAACAAIAAAABAAEAAAACAAMAAAABAAEAAAACAAUAAAAAAAEAAAACAAQAAAAAAAEAAAACAAEAAAAAAAEAAAACAP//AAABAAEAAAACAAYAAAABAAEAAAABAP3/AAAAAAAAAAAAAP3/AAAAAAAAAFD///3/AAAAAAAAAAD+//3/AAAAAAAAAFD9//3/AAAAAAAAAAD9//7/AAAAAAAAAAD9////AAAAAAAAAFD9/wAAAAAAAAAAAAD9/wEAAAAAAAAAAFD+/wIAAAAAAAAAAFD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAFABAAIAAAAAAAAAAFD9/wIAAAAAAAAAAAA=")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("6_0liky")]
+
+[node name="Isis" parent="." instance=ExtResource("1_grpr4")]
+position = Vector2(26, 29)
+script = ExtResource("2_a55pu")
+
+[node name="chalice" parent="." instance=ExtResource("5_f45tc")]
+scale = Vector2(0.35, 0.35)

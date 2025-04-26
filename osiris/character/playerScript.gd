@@ -16,6 +16,20 @@ func _physics_process(delta):
  
 	if direction.length() > 0:
 		direction = direction.normalized()
- 
-	velocity = direction * speed
-	move_and_slide()
+		velocity = direction * speed
+		move_and_slide()
+		
+ 		
+		if abs(velocity.x) > abs(velocity.y):
+			if velocity.x > 0:
+				$AnimatedSprite2D.play("right")
+			else:
+				$AnimatedSprite2D.play("left")
+		else:
+			if velocity.y > 0:
+				$AnimatedSprite2D.play("down")
+			else:
+				$AnimatedSprite2D.play("up")
+	else:
+		$AnimatedSprite2D.stop()
+	
