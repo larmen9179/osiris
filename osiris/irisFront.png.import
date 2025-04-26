@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tegfoxmpmilb"
-path="res://.godot/imported/level2tile2.png-c08d77046ad3ecced6e3e61904a60a9e.ctex"
+uid="uid://bft0a2alldh0p"
+path="res://.godot/imported/irisFront.png-128fabe129e601b7d9ce781956cf21c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spriteSheets/levelSheet/level2tile2.png"
-dest_files=["res://.godot/imported/level2tile2.png-c08d77046ad3ecced6e3e61904a60a9e.ctex"]
+source_file="res://irisFront.png"
+dest_files=["res://.godot/imported/irisFront.png-128fabe129e601b7d9ce781956cf21c8.ctex"]
 
 [params]
 
