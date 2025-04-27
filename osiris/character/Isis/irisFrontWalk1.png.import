@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c50ox6uijb8f7"
+=======
+uid="uid://c5cwpiy4vhdjn"
+>>>>>>> fb9b76ba097011ef5b6281bea3ff3b14b9688ca5
 path="res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"
 metadata={
 "vram_texture": false

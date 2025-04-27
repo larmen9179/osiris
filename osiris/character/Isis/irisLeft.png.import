@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3qm8vg1toddm"
-path="res://.godot/imported/apepFront.png-f55e4d81617733d4dd11392f0befde05.ctex"
+uid="uid://dmvjap561dvn8"
+path="res://.godot/imported/irisLeft.png-a6607800838c3eda447245a267525380.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-f55e4d81617733d4dd11392f0befde05.ctex"]
+source_file="res://character/Isis/irisLeft.png"
+dest_files=["res://.godot/imported/irisLeft.png-a6607800838c3eda447245a267525380.ctex"]
 
 [params]
 

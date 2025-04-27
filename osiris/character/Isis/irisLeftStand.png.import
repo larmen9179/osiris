@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://csjfsnopjvhnk"
+=======
+uid="uid://1pn2cn5dtuoy"
+>>>>>>> fb9b76ba097011ef5b6281bea3ff3b14b9688ca5
 path="res://.godot/imported/irisLeftStand.png-ff51a955902210075501b6854290c9d5.ctex"
 metadata={
 "vram_texture": false
