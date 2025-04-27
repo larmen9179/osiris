@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0ng7u001ruff"
-path="res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"
+uid="uid://bsb2wfnvcml12"
+path="res://.godot/imported/Stairthang.png-e6338d9928877eb6d5610ecca466e4d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisFrontWalk1.png"
-dest_files=["res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"]
+source_file="res://spriteSheets/levelSheet/Stairthang.png"
+dest_files=["res://.godot/imported/Stairthang.png-e6338d9928877eb6d5610ecca466e4d8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0ng7u001ruff"
-path="res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"
+uid="uid://cy27jvs67pkjq"
+path="res://.godot/imported/Flaur2.png-7467f044d40da234309ce552e8dd9d23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisFrontWalk1.png"
-dest_files=["res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"]
+source_file="res://spriteSheets/levelSheet/Flaur2.png"
+dest_files=["res://.godot/imported/Flaur2.png-7467f044d40da234309ce552e8dd9d23.ctex"]
 
 [params]
 
