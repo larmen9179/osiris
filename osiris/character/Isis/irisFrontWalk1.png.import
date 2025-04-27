@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5av0fg6fnnux"
-path="res://.godot/imported/apepBack.png-d11302e0e7167a3187a9f30ced9937e0.ctex"
+uid="uid://c5cwpiy4vhdjn"
+path="res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://apepBack.png"
-dest_files=["res://.godot/imported/apepBack.png-d11302e0e7167a3187a9f30ced9937e0.ctex"]
+source_file="res://character/Isis/irisFrontWalk1.png"
+dest_files=["res://.godot/imported/irisFrontWalk1.png-59a3d49f43b946e82e126a75fef0773a.ctex"]
 
 [params]
 

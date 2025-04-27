@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3xwm1x3umct7"
-path="res://.godot/imported/sethFront.png-80c049affa39486a4f30985c7c610da6.ctex"
+uid="uid://dmvjap561dvn8"
+path="res://.godot/imported/irisLeft.png-a6607800838c3eda447245a267525380.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sethFront.png"
-dest_files=["res://.godot/imported/sethFront.png-80c049affa39486a4f30985c7c610da6.ctex"]
+source_file="res://character/Isis/irisLeft.png"
+dest_files=["res://.godot/imported/irisLeft.png-a6607800838c3eda447245a267525380.ctex"]
 
 [params]
 
