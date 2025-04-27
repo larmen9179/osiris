@@ -8,7 +8,6 @@ extends CharacterBody2D
 @export var speed = 100
 @export var shoot_cooldown = .3
 @onready var random = RandomNumberGenerator.new()
-@onready var tilemap = get_parent().get_node("/level1/Terrain")
 var last_direction = Vector2.RIGHT  # default facing right
 
 var shoot_timer = 0.0
