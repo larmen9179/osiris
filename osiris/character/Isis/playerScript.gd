@@ -1,7 +1,10 @@
 extends CharacterBody2D
 
 @export var speed = 200
+@export var attack_duration = 0.3
 @onready var random = RandomNumberGenerator.new()
+var attacking = false
+var attack_timer = 0
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
@@ -10,9 +13,9 @@ func _physics_process(delta):
 		direction.y -= 1
 	if Input.is_key_pressed(KEY_A):
 		direction.x -= 1
-	if Input.is_key_pressed(KEY_S):
-		direction.x += 1
 	if Input.is_key_pressed(KEY_D):
+		direction.x += 1
+	if Input.is_key_pressed(KEY_S):
 		direction.y += 1
 
 	if direction.length() > 0:
@@ -36,24 +39,17 @@ func _physics_process(delta):
 				$AnimatedSprite2D.play("up")
 	else:
 		$AnimatedSprite2D.stop()
-<<<<<<< HEAD
-	
-	
-=======
 
 func _input(event):
 	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_SPACE:
-			advance_text()
-		elif event.keycode == KEY_J:
+		if event.keycode == KEY_J:
 			hand_to_hand_combat()
 		elif event.keycode == KEY_K:
 			use_spell()
 
-func advance_text():
-	print("Advance text!")  # Replace with your dialogue logic
-
 func hand_to_hand_combat():
+	attacking = true
+	attack_timer = attack_duration
 	print("Isis attacks with hand-to-hand combat!")  # Replace with your attack animation/damage logic
 
 func use_spell():
@@ -65,4 +61,9 @@ func use_spell():
 			print("Isis summons the Eye of Horus! (Medium Damage)")  # Replace with Eye of Horus attack
 		3:
 			print("Isis calls upon Ra the Sun God! (Strongest Damage)")  # Replace with Ra attack
->>>>>>> eed7ce49888a3eb1c489d0415e1b885c0b458b96
+
+func _process(delta):
+	if attacking:
+		attack_timer -= delta
+		if attack_timer <= 0:
+			attacking = false

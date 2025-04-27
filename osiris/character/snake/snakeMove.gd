@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 20
 var player = null
+var health = 3
 @onready var sprite = $AnimatedSprite2D
 @onready var collision_shape = $CollisionShape2D
 
@@ -25,3 +26,16 @@ func _physics_process(delta):
 		else:
 			sprite.play("slither_left")
 			collision_shape.rotation = deg_to_rad(180)
+
+func _on_body_entered(body):
+	if body.name == "Isis":  # or check by group if you want
+		if body.attacking:
+			print("snake took damage")
+			print(body.attacking)
+			take_damage(1)
+
+func take_damage(damageIn):
+	health -= damageIn
+	
+	if health < 1:
+		queue_free()

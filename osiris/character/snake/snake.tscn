@@ -8,10 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://bws8iga0qtnim" path="res://character/snake/snake2.png" id="5_lehil"]
 [ext_resource type="Texture2D" uid="uid://dp5akabklg34x" path="res://character/snake/snake3.png" id="6_sgbkp"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jds57"]
-radius = 4.23585
-height = 19.7673
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_g1774"]
 animations = [{
 "frames": [{
@@ -49,17 +45,31 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jds57"]
+radius = 5.8165
+height = 14.1195
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(0.6, 0.6)
 script = ExtResource("1_4uavg")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(6.66667, 11.6667)
-rotation = 3.98356
-shape = SubResource("CapsuleShape2D_jds57")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_g1774")
 animation = &"slither_right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.66667, -1.19209e-07)
+rotation = 3.98356
+shape = SubResource("CapsuleShape2D_jds57")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(1.66667, 2.45041e-07)
+rotation = -2.29963
+shape = SubResource("CapsuleShape2D_jds57")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
