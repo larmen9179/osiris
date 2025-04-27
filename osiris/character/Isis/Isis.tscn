@@ -1,20 +1,32 @@
-[gd_scene load_steps=14 format=3 uid="uid://fupvqx2ayje4"]
+[gd_scene load_steps=17 format=3 uid="uid://fupvqx2ayje4"]
 
 [ext_resource type="Script" uid="uid://dne3arqosuhvu" path="res://character/Isis/playerScript.gd" id="1_t5jci"]
+[ext_resource type="Texture2D" uid="uid://dr7xtv71sbcvs" path="res://character/Isis/irisFront.png" id="1_tsv24"]
 [ext_resource type="Texture2D" uid="uid://7wkoovklgetj" path="res://character/Isis/irisFrontWalk1.png" id="2_0nulg"]
 [ext_resource type="PackedScene" uid="uid://b8ny5h8lfald" path="res://projectiles/projectile.tscn" id="2_jqrav"]
 [ext_resource type="Texture2D" uid="uid://brkhjyk7402qi" path="res://character/Isis/irisBack.png" id="2_x27ys"]
 [ext_resource type="Texture2D" uid="uid://ti7ethc2vid2" path="res://character/Isis/irisFrontWalk2.png" id="3_jqrav"]
+[ext_resource type="Texture2D" uid="uid://ct763da10262u" path="res://character/Isis/irisFrontMagic.png" id="3_npopq"]
 [ext_resource type="Texture2D" uid="uid://br6havim07f1n" path="res://character/Isis/irisLeftPunch.png" id="3_psuob"]
 [ext_resource type="Texture2D" uid="uid://b28lhrpxpph0m" path="res://character/Isis/irisLeftMagic.png" id="4_drl6s"]
 [ext_resource type="Texture2D" uid="uid://u448f6yyslnl" path="res://character/Isis/irisLeftStand.png" id="5_lf05q"]
 [ext_resource type="Texture2D" uid="uid://stnfsfpfn7rg" path="res://character/Isis/irisRightPunch.png" id="6_4l6j4"]
 [ext_resource type="Texture2D" uid="uid://d23gdew1gxbf7" path="res://character/Isis/irisRightStand.png" id="6_uidv7"]
 [ext_resource type="Texture2D" uid="uid://bdaqvv4mhjqla" path="res://character/Isis/irisRightMagic.png" id="7_vs6ot"]
+[ext_resource type="Texture2D" uid="uid://breky5xbqvp2r" path="res://character/Isis/irisBackMagic.png" id="9_vs6ot"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nxnpd"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_npopq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_npopq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_tsv24")
+}],
 "loop": true,
 "name": &"attack_down",
 "speed": 5.0
@@ -53,7 +65,16 @@ animations = [{
 "name": &"attack_right",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_vs6ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vs6ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_x27ys")
+}],
 "loop": true,
 "name": &"attack_up",
 "speed": 5.0
@@ -106,7 +127,7 @@ orb_scene = ExtResource("2_jqrav")
 texture_filter = 1
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_nxnpd")
-animation = &"attack_right"
+animation = &"attack_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
