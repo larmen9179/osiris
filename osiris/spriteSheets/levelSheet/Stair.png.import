@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://breky5xbqvp2r"
-=======
-uid="uid://g2mnln58jl51"
->>>>>>> c54d98412288b7edb53b12b8258fbd3789135db6
-path="res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"
+uid="uid://beoia62ygc20b"
+path="res://.godot/imported/Stair.png-6d3cc17ad73ecd165cc50e91599770c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisBackMagic.png"
-dest_files=["res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"]
+source_file="res://spriteSheets/levelSheet/Stair.png"
+dest_files=["res://.godot/imported/Stair.png-6d3cc17ad73ecd165cc50e91599770c0.ctex"]
 
 [params]
 

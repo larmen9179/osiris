@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://breky5xbqvp2r"
-=======
-uid="uid://g2mnln58jl51"
->>>>>>> c54d98412288b7edb53b12b8258fbd3789135db6
-path="res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"
+uid="uid://brx3s1w7usjbe"
+path="res://.godot/imported/temple_wall2.png-9a4c6cff9c934d28aa3ad317879c399a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisBackMagic.png"
-dest_files=["res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"]
+source_file="res://spriteSheets/levelSheet/temple_wall2.png"
+dest_files=["res://.godot/imported/temple_wall2.png-9a4c6cff9c934d28aa3ad317879c399a.ctex"]
 
 [params]
 

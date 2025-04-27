@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://breky5xbqvp2r"
-=======
-uid="uid://g2mnln58jl51"
->>>>>>> c54d98412288b7edb53b12b8258fbd3789135db6
-path="res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"
+uid="uid://cy27jvs67pkjq"
+path="res://.godot/imported/Flaur2.png-7467f044d40da234309ce552e8dd9d23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisBackMagic.png"
-dest_files=["res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"]
+source_file="res://spriteSheets/levelSheet/Flaur2.png"
+dest_files=["res://.godot/imported/Flaur2.png-7467f044d40da234309ce552e8dd9d23.ctex"]
 
 [params]
 
