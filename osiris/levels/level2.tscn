@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://b3rlop6ymv0cv"]
+[gd_scene load_steps=8 format=4 uid="uid://c4vb5bmmodvys"]
 
 [ext_resource type="Texture2D" uid="uid://byapkks61v3g3" path="res://spriteSheets/levelSheet/level2tile1.png" id="1_qyb5k"]
 [ext_resource type="Texture2D" uid="uid://tegfoxmpmilb" path="res://spriteSheets/levelSheet/level2tile2.png" id="2_py88r"]
