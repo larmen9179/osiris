@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var speed = 100
 @export var shoot_cooldown = .3
 @onready var random = RandomNumberGenerator.new()
+@onready var tilemap = get_parent().get_node("/level1/Terrain")
 var last_direction = Vector2.RIGHT  # default facing right
 
 var shoot_timer = 0.0
@@ -44,6 +45,7 @@ func _physics_process(delta):
 		$AnimatedSprite2D.stop()
 	
 	shoot_timer -= delta  
+	
 
 func _input(event):
 	if event is InputEventKey and event.pressed:
