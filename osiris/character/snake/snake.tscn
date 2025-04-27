@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://c8elaqkp6egrp"]
+
+[ext_resource type="Script" uid="uid://bsttbv5d1qwos" path="res://character/snake/snakeMove.gd" id="1_4uavg"]
+[ext_resource type="Texture2D" uid="uid://doqs4u6lsnpmw" path="res://character/snake/snake1mirror.png" id="1_6aa21"]
+[ext_resource type="Texture2D" uid="uid://ds88dw0g75uvm" path="res://character/snake/snake2mirror.png" id="2_mlgff"]
+[ext_resource type="Texture2D" uid="uid://c56spoevjmut8" path="res://character/snake/snake3mirror.png" id="3_iikj6"]
+[ext_resource type="Texture2D" uid="uid://cq55hkwsg3y68" path="res://character/snake/snake1.png" id="4_lc60c"]
+[ext_resource type="Texture2D" uid="uid://bws8iga0qtnim" path="res://character/snake/snake2.png" id="5_lehil"]
+[ext_resource type="Texture2D" uid="uid://dp5akabklg34x" path="res://character/snake/snake3.png" id="6_sgbkp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jds57"]
+radius = 4.23585
+height = 19.7673
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g1774"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6aa21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mlgff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iikj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mlgff")
+}],
+"loop": true,
+"name": &"slither_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lc60c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lehil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sgbkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lehil")
+}],
+"loop": true,
+"name": &"slither_right",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_4uavg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6.66667, 11.6667)
+rotation = 3.98356
+shape = SubResource("CapsuleShape2D_jds57")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_g1774")
+animation = &"slither_right"

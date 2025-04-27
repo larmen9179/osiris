@@ -8,5 +8,5 @@ func _on_Item_body_entered(body):
 		# Add to inventory, heal player, whatever effect
 		# (You'd call a method on the player probably)
 		#body.add_item(self)  # (if you have an add_item function)
-		get_node("/root/level1/CanvasLayer").show_message("You picked up the chalice!")
+		get_node("/root/level1/textBox").show_message("You picked up the chalice!")
 		queue_free()  # Destroy the item after pickup
