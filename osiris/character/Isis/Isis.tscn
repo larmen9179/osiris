@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://brkhjyk7402qi" path="res://character/Isis/irisBack.png" id="2_x27ys"]
 [ext_resource type="PackedScene" uid="uid://cs223rhq1n5ed" path="res://projectiles/ra.tscn" id="3_iuhnb"]
 [ext_resource type="Texture2D" uid="uid://d0u2pwnqo0h1u" path="res://character/Isis/irisFrontWalk2.png" id="3_jqrav"]
-[ext_resource type="Texture2D" uid="uid://jqf42exvuqm6" path="res://character/Isis/irisFrontMagic.png" id="3_npopq"]
+[ext_resource type="Texture2D" uid="uid://b8xiy5cvx80qw" path="res://character/Isis/irisFrontMagic.png" id="3_npopq"]
 [ext_resource type="Texture2D" uid="uid://iq6w4o81srvu" path="res://character/Isis/irisLeftPunch.png" id="3_psuob"]
 [ext_resource type="PackedScene" uid="uid://dn3apmviqw6tn" path="res://projectiles/horus.tscn" id="4_a6muw"]
 [ext_resource type="Texture2D" uid="uid://b28lhrpxpph0m" path="res://character/Isis/irisLeftMagic.png" id="4_drl6s"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://drj65n0llw1wj" path="res://character/Isis/irisRightPunch.png" id="6_4l6j4"]
 [ext_resource type="Texture2D" uid="uid://iqlxm135miom" path="res://character/Isis/irisRightStand.png" id="6_uidv7"]
 [ext_resource type="Texture2D" uid="uid://bdaqvv4mhjqla" path="res://character/Isis/irisRightMagic.png" id="7_vs6ot"]
-[ext_resource type="Texture2D" uid="uid://36fgsyia1fca" path="res://character/Isis/irisBackMagic.png" id="9_vs6ot"]
+[ext_resource type="Texture2D" uid="uid://brpw8q3gfrkak" path="res://character/Isis/irisBackMagic.png" id="9_vs6ot"]
 [ext_resource type="AudioStream" uid="uid://bdkx8wwwlmrbl" path="res://sounds/uss1.mp3" id="15_6hy4g"]
 [ext_resource type="AudioStream" uid="uid://kasjm41cp6vi" path="res://sounds/ayy.mp3" id="16_hl748"]
 

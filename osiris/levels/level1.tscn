@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c8elaqkp6egrp" path="res://character/snake/snake.tscn" id="5_61w3m"]
 [ext_resource type="PackedScene" uid="uid://bsbnblymck7f5" path="res://items/chalice/chaliceItem.tscn" id="5_f45tc"]
 [ext_resource type="PackedScene" uid="uid://bg5oi3v58gtlw" path="res://textBox.tscn" id="5_pdpul"]
-[ext_resource type="PackedScene" uid="uid://hvb8vxpokcwo" path="res://items/legs/legs.tscn" id="6_pdpul"]
+[ext_resource type="Script" uid="uid://bxecposkoioyb" path="res://levels/level_change2.gd" id="6_pdpul"]
 
 [sub_resource type="GDScript" id="GDScript_61w3m"]
 
@@ -36,5 +36,9 @@ scale = Vector2(0.5, 0.5)
 
 [node name="textBox" parent="." instance=ExtResource("5_pdpul")]
 
-[node name="legs" parent="." instance=ExtResource("6_pdpul")]
-position = Vector2(254, 225)
+[node name="levelChange" type="Area2D" parent="."]
+position = Vector2(148, 216)
+script = ExtResource("6_pdpul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="levelChange"]
+shape = SubResource("RectangleShape2D_61w3m")
