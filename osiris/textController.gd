@@ -18,9 +18,7 @@ func _ready():
 		"Press A to move left.",
 		"Press S to move down.",
 		"Press D to move right.",
-		"",
 		"To use Isis’s Powers and Spells:",
-		"Press J for hand-to-hand combat.",
 		"Press K to use Isis’s spells.",
 		"""Spell system:
 1 = Scarabs (weak damage),
