@@ -48,3 +48,4 @@ tile_set = SubResource("TileSet_amlrw")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_py88r")]
 position = Vector2(-78, 144)
+speed = null
