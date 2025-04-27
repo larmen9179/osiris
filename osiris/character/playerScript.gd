@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 200
 @export var punch_range = 50  # Distance at which you can hit an enemy
-@export var punch_damage = 10  # Damage dealt with the punch
+@export var damage = 10  # Damage dealt with the punch
 
 @onready var random = RandomNumberGenerator.new()
 @onready var enemy_area = $EnemyArea  # Assuming you have an Area2D for the enemy hit detection
@@ -45,27 +45,26 @@ func _input(event):
 	if event is InputEventKey and event.pressed:
 		if event.keycode == KEY_SPACE:
 			advance_text()
-		elif event.keycode == KEY_J:
-			hand_to_hand_combat()
+		elif event.keycode == KEY_K:
+			isis_combat()
 
 func advance_text():
 	print("Advance text!")  # Replace with your dialogue logic
 
-func hand_to_hand_combat():
-	print("Isis attacks with hand-to-hand combat!")  # Replace with your attack animation/damage logic
+func isis_combat():
+	print("Isis attacks with combat!")  # Replace with your attack animation/damage logic
 
 	# Play punch animation
-	$AnimatedSprite2D.play("punch")  # Assuming you have a "punch" animation set up in your sprite
-
+	$AnimatedSprite2D.play() 
 	# Detect nearby enemy
 	var enemy = get_nearest_enemy()
 	if enemy and position.distance_to(enemy.position) <= punch_range:
-		enemy.take_damage(punch_damage)  # Assuming enemy has a `take_damage` method
+		enemy.take_damage(damage)  # Assuming enemy has a `take_damage` method
 
 func get_nearest_enemy() -> CharacterBody2D:
 	# Example of detecting the nearest enemy. Adjust as needed.
 	# This could be a RayCast2D, Area2D, or just checking all enemies in the scene.
-	for enemy in get_tree().get_nodes_in_group("enemies"):  # Assuming enemies are added to an "enemies" group
+	for enemy in get_tree().get_nodes_in_group("snake"):  # Assuming enemies are added to an "enemies" group
 		if enemy is CharacterBody2D:
 			return enemy
 	return null
