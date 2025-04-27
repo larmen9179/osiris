@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs223rhq1n5ed"]
+
+[ext_resource type="Script" uid="uid://dvabybcb2u4cs" path="res://projectiles/scarab.gd" id="1_noxuv"]
+[ext_resource type="Texture2D" uid="uid://431s1xr1ldt7" path="res://items/orbs/purple/purpleRa.png" id="2_noxuv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_woh24"]
+size = Vector2(8, 8)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_noxuv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_woh24")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_noxuv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

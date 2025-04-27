@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn3apmviqw6tn"]
+
+[ext_resource type="Script" uid="uid://dvabybcb2u4cs" path="res://projectiles/scarab.gd" id="1_16by8"]
+[ext_resource type="Texture2D" uid="uid://bt7qxr7w3aqpp" path="res://items/orbs/red/redHorus.png" id="2_16by8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_woh24"]
+size = Vector2(8, 8)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_16by8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_woh24")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_16by8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

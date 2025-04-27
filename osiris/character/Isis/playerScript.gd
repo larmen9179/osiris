@@ -1,6 +1,10 @@
 extends CharacterBody2D
 
-@export var orb_scene: PackedScene
+@onready var attack_sound_1 = $attackSound1  # <-- or whatever you named it
+@onready var attack_sound_2 = $attackSound2
+@export var scarab_scene: PackedScene
+@export var ra_scene: PackedScene
+@export var horus_scene: PackedScene
 @export var speed = 100
 @export var shoot_cooldown = .3
 @onready var random = RandomNumberGenerator.new()
@@ -71,18 +75,25 @@ func use_spell():
 		else:
 			$AnimatedSprite2D.play("attack_up")
 
+	var attackNumber = random.randi_range(1, 7)
+	if attackNumber >= 1 and attackNumber <= 6:
+		attack_sound_1.play()
+	else:
+		attack_sound_2.play()
+	
+
 	# 🔥 Then summon the spell orb
 	var spell_number = random.randi_range(1, 3)
 	match spell_number:
 		1:
 			print("Isis summons Scarabs! (Weak Damage)")
-			summon_spell_orb(orb_scene)
+			summon_spell_orb(scarab_scene)
 		2:
 			print("Isis summons the Eye of Horus! (Medium Damage)")
-			summon_spell_orb(orb_scene)
+			summon_spell_orb(horus_scene)
 		3:
 			print("Isis calls upon Ra the Sun God! (Strongest Damage)")
-			summon_spell_orb(orb_scene)
+			summon_spell_orb(ra_scene)
 
 func summon_spell_orb(spell_scene: PackedScene):
 	var orb = spell_scene.instantiate()
