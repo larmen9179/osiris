@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://cdslc3sf6h87c"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://cedldsht2s7fb"]
+>>>>>>> Stashed changes
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h22u4"]
 radius = 4.0
