@@ -1,10 +1,13 @@
 extends CharacterBody2D
 
-@export var speed = 200
-@export var attack_duration = 0.3
+@export var orb_scene: PackedScene
+@export var speed = 100
+@export var shoot_cooldown = .3
 @onready var random = RandomNumberGenerator.new()
-var attacking = false
-var attack_timer = 0
+var last_direction = Vector2.RIGHT  # default facing right
+
+var shoot_timer = 0.0
+
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
@@ -19,7 +22,7 @@ func _physics_process(delta):
 		direction.y += 1
 
 	if direction.length() > 0:
-		direction = direction.normalized()
+		last_direction = direction.normalized()
 		velocity = direction * speed
 	else:
 		velocity = Vector2.ZERO
@@ -39,31 +42,48 @@ func _physics_process(delta):
 				$AnimatedSprite2D.play("up")
 	else:
 		$AnimatedSprite2D.stop()
+	
+	shoot_timer -= delta  
 
 func _input(event):
 	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_J:
-			hand_to_hand_combat()
-		elif event.keycode == KEY_K:
+		if event.keycode == KEY_K:
 			use_spell()
 
-func hand_to_hand_combat():
-	attacking = true
-	attack_timer = attack_duration
-	print("Isis attacks with hand-to-hand combat!")  # Replace with your attack animation/damage logic
-
 func use_spell():
+	
+	if shoot_timer > 0:
+		return  # prevent spamming
+
+	shoot_timer = shoot_cooldown  # reset cooldown
+
+	# 🔥 Play attack animation based on last move direction
+	if abs(last_direction.x) > abs(last_direction.y):
+		if last_direction.x > 0:
+			$AnimatedSprite2D.play("attack_right")
+		else:
+			$AnimatedSprite2D.play("attack_left")
+	else:
+		if last_direction.y > 0:
+			$AnimatedSprite2D.play("attack_down")
+		else:
+			$AnimatedSprite2D.play("attack_up")
+
+	# 🔥 Then summon the spell orb
 	var spell_number = random.randi_range(1, 3)
 	match spell_number:
 		1:
-			print("Isis summons Scarabs! (Weak Damage)")  # Replace with Scarab attack
+			print("Isis summons Scarabs! (Weak Damage)")
+			summon_spell_orb(orb_scene)
 		2:
-			print("Isis summons the Eye of Horus! (Medium Damage)")  # Replace with Eye of Horus attack
+			print("Isis summons the Eye of Horus! (Medium Damage)")
+			summon_spell_orb(orb_scene)
 		3:
-			print("Isis calls upon Ra the Sun God! (Strongest Damage)")  # Replace with Ra attack
+			print("Isis calls upon Ra the Sun God! (Strongest Damage)")
+			summon_spell_orb(orb_scene)
 
-func _process(delta):
-	if attacking:
-		attack_timer -= delta
-		if attack_timer <= 0:
-			attacking = false
+func summon_spell_orb(spell_scene: PackedScene):
+	var orb = spell_scene.instantiate()
+	get_parent().add_child(orb)
+	orb.global_position = global_position
+	orb.direction = last_direction.normalized()

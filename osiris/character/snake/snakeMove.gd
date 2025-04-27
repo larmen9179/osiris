@@ -27,15 +27,7 @@ func _physics_process(delta):
 			sprite.play("slither_left")
 			collision_shape.rotation = deg_to_rad(180)
 
-func _on_body_entered(body):
-	if body.name == "Isis":  # or check by group if you want
-		if body.attacking:
-			print("snake took damage")
-			print(body.attacking)
-			take_damage(1)
-
 func take_damage(damageIn):
 	health -= damageIn
-	
-	if health < 1:
+	if health <= 0:
 		queue_free()

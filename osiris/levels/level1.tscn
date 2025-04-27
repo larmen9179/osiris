@@ -13,7 +13,6 @@ tile_map_data = PackedByteArray("AAD+//7/AAAAAAAAAAD///7/AAAAAAAAAFAAAP7/AAAAAAA
 
 [node name="Isis" parent="." instance=ExtResource("1_grpr4")]
 position = Vector2(49, -57)
-attack_duration = 0.3
 
 [node name="chalice" parent="." instance=ExtResource("5_f45tc")]
 scale = Vector2(0.35, 0.35)
