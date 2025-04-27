@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=9 format=4 uid="uid://oywljlyi0al0"]
-=======
 [gd_scene load_steps=8 format=4 uid="uid://b3rlop6ymv0cv"]
->>>>>>> 2fc85ac7d25fb1b31b3c2af12a8ae34b0e9a4348
 
 [ext_resource type="Texture2D" uid="uid://byapkks61v3g3" path="res://spriteSheets/levelSheet/level2tile1.png" id="1_qyb5k"]
 [ext_resource type="Texture2D" uid="uid://tegfoxmpmilb" path="res://spriteSheets/levelSheet/level2tile2.png" id="2_py88r"]
@@ -12,15 +8,19 @@
 texture = ExtResource("1_qyb5k")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 15.597, -16, 16, 16, -16, 16)
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(16, 16, -16, 16, -16, -16, 16, -16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qxxec"]
 texture = ExtResource("2_py88r")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 16, -16, -16, 16, -16, 16, 16)
 0:1/0 = 0
 1:1/0 = 0
 
@@ -38,6 +38,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_amlrw"]
 tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_0hshn")
 sources/2 = SubResource("TileSetAtlasSource_qxxec")
 sources/3 = SubResource("TileSetAtlasSource_tn8nv")
