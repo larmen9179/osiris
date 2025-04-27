@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://36fgsyia1fca"
+=======
+uid="uid://cvuv6h0202gc6"
+>>>>>>> Stashed changes
 path="res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"
 metadata={
 "vram_texture": false
