@@ -1,13 +1,4 @@
-<<<<<<< HEAD
 [gd_scene load_steps=9 format=4 uid="uid://pvxnd000jivb"]
-=======
-<<<<<<< Updated upstream
-[gd_scene load_steps=8 format=4 uid="uid://pvxnd000jivb"]
-=======
-[gd_scene load_steps=9 format=4 uid="uid://oywljlyi0al0"]
-[gd_scene load_steps=8 format=4 uid="uid://b3rlop6ymv0cv"]
->>>>>>> Stashed changes
->>>>>>> 6d55448fd151525ddccbe82576d49ca1322ebc08
 
 [ext_resource type="Texture2D" uid="uid://byapkks61v3g3" path="res://spriteSheets/levelSheet/level2tile1.png" id="1_qyb5k"]
 [ext_resource type="Texture2D" uid="uid://tegfoxmpmilb" path="res://spriteSheets/levelSheet/level2tile2.png" id="2_py88r"]
