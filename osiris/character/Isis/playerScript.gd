@@ -75,8 +75,8 @@ func use_spell():
 		else:
 			$AnimatedSprite2D.play("attack_up")
 
-	var attackNumber = random.randi_range(1, 7)
-	if attackNumber >= 1 and attackNumber <= 6:
+	var attackNumber = random.randi_range(1, 5)
+	if attackNumber >= 1 and attackNumber <= 4:
 		attack_sound_1.play()
 	else:
 		attack_sound_2.play()
