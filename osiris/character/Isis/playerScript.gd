@@ -8,6 +8,7 @@ extends CharacterBody2D
 @export var speed = 100
 @export var shoot_cooldown = .3
 @onready var random = RandomNumberGenerator.new()
+@onready var tilemap = get_parent().get_node("/level1/Terrain")
 var last_direction = Vector2.RIGHT  # default facing right
 
 var shoot_timer = 0.0
@@ -74,8 +75,8 @@ func use_spell():
 		else:
 			$AnimatedSprite2D.play("attack_up")
 
-	var attackNumber = random.randi_range(1, 5)
-	if attackNumber >= 1 and attackNumber <= 4:
+	var attackNumber = random.randi_range(1, 7)
+	if attackNumber >= 1 and attackNumber <= 6:
 		attack_sound_1.play()
 	else:
 		attack_sound_2.play()
