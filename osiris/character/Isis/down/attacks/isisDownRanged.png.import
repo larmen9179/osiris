@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5w0qf0ukl3b4"
-path="res://.godot/imported/isisUpRanged.png-7547083d50ea58e68c7efef21e73e786.ctex"
+uid="uid://bsxsnij685te3"
+path="res://.godot/imported/isisDownRanged.png-01f61ec4c9ee6d6bf5cf44049776871e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/isisUpRanged.png"
-dest_files=["res://.godot/imported/isisUpRanged.png-7547083d50ea58e68c7efef21e73e786.ctex"]
+source_file="res://character/isis/down/attacks/isisDownRanged.png"
+dest_files=["res://.godot/imported/isisDownRanged.png-01f61ec4c9ee6d6bf5cf44049776871e.ctex"]
 
 [params]
 

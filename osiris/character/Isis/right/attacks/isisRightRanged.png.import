@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iqlxm135miom"
-path="res://.godot/imported/isisRightOld.png-0d1e5567a5763611c9668beda42528d4.ctex"
+uid="uid://bdaqvv4mhjqla"
+path="res://.godot/imported/isisRightRanged.png-8ee03008e9423d35edd688bfcb35667b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/isisRightOld.png"
-dest_files=["res://.godot/imported/isisRightOld.png-0d1e5567a5763611c9668beda42528d4.ctex"]
+source_file="res://character/isis/right/attacks/isisRightRanged.png"
+dest_files=["res://.godot/imported/isisRightRanged.png-8ee03008e9423d35edd688bfcb35667b.ctex"]
 
 [params]
 

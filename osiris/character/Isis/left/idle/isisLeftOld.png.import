@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iq6w4o81srvu"
-path="res://.godot/imported/isisLeftMeleeOld.png-2a0d57bbcfaa0ef153e86474a7174046.ctex"
+uid="uid://dumddxwyrcblp"
+path="res://.godot/imported/isisLeftOld.png-ac26831795af2a48c99d69f7eaac55ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/isisLeftMeleeOld.png"
-dest_files=["res://.godot/imported/isisLeftMeleeOld.png-2a0d57bbcfaa0ef153e86474a7174046.ctex"]
+source_file="res://character/isis/left/idle/isisLeftOld.png"
+dest_files=["res://.godot/imported/isisLeftOld.png-ac26831795af2a48c99d69f7eaac55ec.ctex"]
 
 [params]
 
