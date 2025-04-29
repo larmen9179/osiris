@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://brx3s1w7usjbe"
+path="res://.godot/imported/temple_wall2.png-a0cef5712ba78be78be55e114065167a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://tiles/levelSheet/temple_wall2.png"
+dest_files=["res://.godot/imported/temple_wall2.png-a0cef5712ba78be78be55e114065167a.ctex"]
 
 [params]
 

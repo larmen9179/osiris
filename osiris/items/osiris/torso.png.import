@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://drse6vx7avwq3"
+path="res://.godot/imported/torso.png-a990b0198d3eee08835ac5a7eeaffbb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://items/osiris/torso.png"
+dest_files=["res://.godot/imported/torso.png-a990b0198d3eee08835ac5a7eeaffbb1.ctex"]
 
 [params]
 

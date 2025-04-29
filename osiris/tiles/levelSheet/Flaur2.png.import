@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://cy27jvs67pkjq"
+path="res://.godot/imported/Flaur2.png-73cf6145881b55be28bcd3b1e5eea2dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://tiles/levelSheet/Flaur2.png"
+dest_files=["res://.godot/imported/Flaur2.png-73cf6145881b55be28bcd3b1e5eea2dd.ctex"]
 
 [params]
 

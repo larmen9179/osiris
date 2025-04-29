@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://crh0x4iyv6i7v"
+path="res://.godot/imported/scarabOrb.png-0d1b00be6b6d9fa650fcdc45c09e6fbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://items/orbs/scarab/scarabOrb.png"
+dest_files=["res://.godot/imported/scarabOrb.png-0d1b00be6b6d9fa650fcdc45c09e6fbd.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://otlofh3thwo5"
+path="res://.godot/imported/chalice.png-5cd41eebdd4c0dc6dff0ef7596ce78ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://items/chalice/chalice.png"
+dest_files=["res://.godot/imported/chalice.png-5cd41eebdd4c0dc6dff0ef7596ce78ab.ctex"]
 
 [params]
 

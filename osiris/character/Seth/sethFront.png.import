@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8lup0famrrhs"
-path="res://.godot/imported/sethFront.png-9825f6dedf4dceff07312190aa118a95.ctex"
+path="res://.godot/imported/sethFront.png-72bed9018f96fa13b20acd33fc3a41ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Seth/sethFront.png"
-dest_files=["res://.godot/imported/sethFront.png-9825f6dedf4dceff07312190aa118a95.ctex"]
+source_file="res://character/seth/sethFront.png"
+dest_files=["res://.godot/imported/sethFront.png-72bed9018f96fa13b20acd33fc3a41ae.ctex"]
 
 [params]
 

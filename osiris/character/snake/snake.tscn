@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8elaqkp6egrp"]
+[gd_scene load_steps=11 format=3 uid="uid://c8elaqkp6egrp"]
 
 [ext_resource type="Script" uid="uid://bsttbv5d1qwos" path="res://character/snake/snakeMove.gd" id="1_4uavg"]
 [ext_resource type="Texture2D" uid="uid://doqs4u6lsnpmw" path="res://character/snake/snake1mirror.png" id="1_6aa21"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cq55hkwsg3y68" path="res://character/snake/snake1.png" id="4_lc60c"]
 [ext_resource type="Texture2D" uid="uid://bws8iga0qtnim" path="res://character/snake/snake2.png" id="5_lehil"]
 [ext_resource type="Texture2D" uid="uid://dp5akabklg34x" path="res://character/snake/snake3.png" id="6_sgbkp"]
+[ext_resource type="AudioStream" uid="uid://cwk3u74y3vilo" path="res://sounds/sets_bark.mp3" id="8_iikj6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g1774"]
 animations = [{
@@ -63,3 +64,7 @@ animation = &"slither_right"
 position = Vector2(1.66667, -1.19209e-07)
 rotation = 3.98356
 shape = SubResource("CapsuleShape2D_jds57")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_iikj6")
+parameters/looping = true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://j2bhfphmwy4h"
+path="res://.godot/imported/legs.png-009e702fefd7efebcd34dcbb27c20cc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://items/osiris/legs.png"
+dest_files=["res://.godot/imported/legs.png-009e702fefd7efebcd34dcbb27c20cc6.ctex"]
 
 [params]
 

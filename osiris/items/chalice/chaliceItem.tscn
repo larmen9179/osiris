@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bsbnblymck7f5"]
 
-[ext_resource type="Texture2D" uid="uid://otlofh3thwo5" path="res://items/chalice/gameJameChalice.png" id="1_7mb76"]
+[ext_resource type="Texture2D" uid="uid://otlofh3thwo5" path="res://items/chalice/chalice.png" id="1_7mb76"]
 [ext_resource type="Script" uid="uid://bkyxb85ynus4c" path="res://items/chalice/chalicePickup.gd" id="1_f5ru1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5ru1"]

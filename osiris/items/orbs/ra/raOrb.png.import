@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2gnuctk7bw7r"
-path="res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"
+uid="uid://431s1xr1ldt7"
+path="res://.godot/imported/raOrb.png-d58f4aaf592dc7afba737c04a1d75559.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/apep/apepFront.png"
-dest_files=["res://.godot/imported/apepFront.png-eeaaa49c3dc760958ef7407cfc98fc64.ctex"]
+source_file="res://items/orbs/ra/raOrb.png"
+dest_files=["res://.godot/imported/raOrb.png-d58f4aaf592dc7afba737c04a1d75559.ctex"]
 
 [params]
 
