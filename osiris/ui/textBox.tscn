@@ -4,7 +4,7 @@
 
 [sub_resource type="Theme" id="Theme_5cyme"]
 
-[node name="textBox" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer"]
 visible = false
 script = ExtResource("1_5cyme")
 

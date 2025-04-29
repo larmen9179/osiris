@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dn3apmviqw6tn"]
 
-[ext_resource type="Script" uid="uid://dvabybcb2u4cs" path="res://items/orbs/scarab/scarab.gd" id="1_mw7st"]
+[ext_resource type="Script" uid="uid://dvabybcb2u4cs" path="res://items/orbs/rangedAttack.gd" id="1_mw7st"]
 [ext_resource type="Texture2D" uid="uid://bt7qxr7w3aqpp" path="res://items/orbs/horus/horusOrb.png" id="2_gtguo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_woh24"]

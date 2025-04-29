@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=8 format=4 uid="uid://ctsthgcmx7m2i"]
-=======
 [gd_scene load_steps=8 format=4 uid="uid://c4vb5bmmodvys"]
->>>>>>> 011e2bb8cafa2eab3fe519fb886565ed23739443
 
 [ext_resource type="Texture2D" uid="uid://byapkks61v3g3" path="res://tiles/levelSheet/level2tile1.png" id="1_qyb5k"]
 [ext_resource type="Texture2D" uid="uid://tegfoxmpmilb" path="res://tiles/levelSheet/level2tile2.png" id="2_py88r"]

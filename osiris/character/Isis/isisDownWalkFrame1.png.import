@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5w0qf0ukl3b4"
-path="res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"
+uid="uid://b0ng7u001ruff"
+path="res://.godot/imported/isisDownWalkFrame1.png-06504ae3ed68e8559707c779e44b8eef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisBackMagic.png"
-dest_files=["res://.godot/imported/irisBackMagic.png-77dea1a18ce9b7658cb273644992b84d.ctex"]
+source_file="res://character/Isis/isisDownWalkFrame1.png"
+dest_files=["res://.godot/imported/isisDownWalkFrame1.png-06504ae3ed68e8559707c779e44b8eef.ctex"]
 
 [params]
 

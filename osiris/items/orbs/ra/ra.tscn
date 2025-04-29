@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cs223rhq1n5ed"]
 
-[ext_resource type="Script" uid="uid://dvabybcb2u4cs" path="res://items/orbs/scarab/scarab.gd" id="1_lk44n"]
+[ext_resource type="Script" uid="uid://dvabybcb2u4cs" path="res://items/orbs/rangedAttack.gd" id="1_lk44n"]
 [ext_resource type="Texture2D" uid="uid://431s1xr1ldt7" path="res://items/orbs/ra/raOrb.png" id="2_s33or"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_woh24"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dumddxwyrcblp"
-path="res://.godot/imported/irisLeftStand.png-ff51a955902210075501b6854290c9d5.ctex"
+uid="uid://iqlxm135miom"
+path="res://.godot/imported/isisRightOld.png-0d1e5567a5763611c9668beda42528d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisLeftStand.png"
-dest_files=["res://.godot/imported/irisLeftStand.png-ff51a955902210075501b6854290c9d5.ctex"]
+source_file="res://character/Isis/isisRightOld.png"
+dest_files=["res://.godot/imported/isisRightOld.png-0d1e5567a5763611c9668beda42528d4.ctex"]
 
 [params]
 

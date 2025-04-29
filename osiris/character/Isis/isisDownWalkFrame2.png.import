@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0u2pwnqo0h1u"
-path="res://.godot/imported/irisFrontWalk2.png-e85cf489988bbb6d9791dddf5b7bcefa.ctex"
+path="res://.godot/imported/isisDownWalkFrame2.png-4c2bb1b5bdb8138d146f35cba1003810.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/Isis/irisFrontWalk2.png"
-dest_files=["res://.godot/imported/irisFrontWalk2.png-e85cf489988bbb6d9791dddf5b7bcefa.ctex"]
+source_file="res://character/Isis/isisDownWalkFrame2.png"
+dest_files=["res://.godot/imported/isisDownWalkFrame2.png-4c2bb1b5bdb8138d146f35cba1003810.ctex"]
 
 [params]
 
