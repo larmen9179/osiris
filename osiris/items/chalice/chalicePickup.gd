@@ -1,12 +1,13 @@
 extends Area2D
 
-func _on_Item_body_entered(body):
-	if body.name == "Isis":
-		# Play pickup sound or animation if you want
+func _on_Item_body_entered(body):	
+	if body.name == "isis":
+		
+		#debug message
 		print("Picked up chalice!")
 		
-		# Add to inventory, heal player, whatever effect
-		# (You'd call a method on the player probably)
-		#body.add_item(self)  # (if you have an add_item function)
+		#grabbing the textBox in the current level (level1)
 		get_node("/root/level1/textBox").show_message("You picked up the chalice!")
-		queue_free()  # Destroy the item after pickup
+		
+		#destroy the item after pickup
+		queue_free()

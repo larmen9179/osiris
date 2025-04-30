@@ -1,35 +1,34 @@
 extends CharacterBody2D
 
-@onready var attack_sound_1 = $attackSound1  # <-- or whatever you named it
-@onready var attack_sound_2 = $attackSound2
+#storing player's audio sounds
+@onready var attack_sound_1 :AudioStreamPlayer2D = $attackSound1
+@onready var attack_sound_2 :AudioStreamPlayer2D = $attackSound2
+
+#storing the scenes for the orb projectiles
+#scarab orb
 @export var scarab_scene: PackedScene
+#ra orb
 @export var ra_scene: PackedScene
+#horus orb
 @export var horus_scene: PackedScene
-@export var speed = 100
+
+#player's speed
+@export var speed: int = 100
+#-----------------------TESTING-----------------------
 @export var shoot_cooldown = .3
 @onready var random = RandomNumberGenerator.new()
-var last_direction = Vector2.RIGHT  # default facing right
-
+var last_direction: Vector2 = Vector2.DOWN
 var shoot_timer = 0.0
+#-----------------------------------------------------
+
 
 
 func _physics_process(delta):
-	var direction = Vector2.ZERO
-
-	if Input.is_key_pressed(KEY_W):
-		direction.y -= 1
-	if Input.is_key_pressed(KEY_A):
-		direction.x -= 1
-	if Input.is_key_pressed(KEY_D):
-		direction.x += 1
-	if Input.is_key_pressed(KEY_S):
-		direction.y += 1
-
-	if direction.length() > 0:
-		last_direction = direction.normalized()
-		velocity = direction * speed
-	else:
-		velocity = Vector2.ZERO
+	#grabbing 
+	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	velocity = direction * speed
+	
+	last_direction = direction
 
 	move_and_slide()
 
@@ -58,11 +57,10 @@ func _input(event):
 func use_spell():
 	
 	if shoot_timer > 0:
-		return  # prevent spamming
+		return
 
-	shoot_timer = shoot_cooldown  # reset cooldown
-
-	# 🔥 Play attack animation based on last move direction
+	shoot_timer = shoot_cooldown
+	
 	if abs(last_direction.x) > abs(last_direction.y):
 		if last_direction.x > 0:
 			$AnimatedSprite2D.play("attack_right")
@@ -74,14 +72,13 @@ func use_spell():
 		else:
 			$AnimatedSprite2D.play("attack_up")
 
+	#playing attack audio based off chance (for rare dialogue)
 	var attackNumber = random.randi_range(1, 7)
 	if attackNumber >= 1 and attackNumber <= 6:
 		attack_sound_1.play()
 	else:
 		attack_sound_2.play()
-	
 
-	# 🔥 Then summon the spell orb
 	var spell_number = random.randi_range(1, 3)
 	match spell_number:
 		1:
@@ -98,4 +95,4 @@ func summon_spell_orb(spell_scene: PackedScene):
 	var orb = spell_scene.instantiate()
 	get_parent().add_child(orb)
 	orb.global_position = global_position
-	orb.direction = last_direction.normalized()
+	orb.direction = last_direction
