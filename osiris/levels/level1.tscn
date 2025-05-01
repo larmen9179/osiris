@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://ctmkbhvvxfvef"]
 
 [ext_resource type="PackedScene" uid="uid://cul6vcr1jd6qi" path="res://tiles/levelSheet/Terrain.tscn" id="1_61w3m"]
-[ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://character/isis/isis.tscn" id="1_grpr4"]
+[ext_resource type="PackedScene" uid="uid://fupvqx2ayje4" path="res://character/Isis/Isis.tscn" id="1_grpr4"]
 [ext_resource type="PackedScene" uid="uid://c8elaqkp6egrp" path="res://character/snake/snake.tscn" id="5_61w3m"]
 [ext_resource type="PackedScene" uid="uid://bsbnblymck7f5" path="res://items/chalice/chalice.tscn" id="5_f45tc"]
 [ext_resource type="PackedScene" uid="uid://bg5oi3v58gtlw" path="res://ui/textBox.tscn" id="5_pdpul"]

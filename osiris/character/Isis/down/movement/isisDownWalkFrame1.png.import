@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0ng7u001ruff"
-path="res://.godot/imported/isisDownWalkFrame1.png-8f0c6875b6295ca28ae630842302a135.ctex"
+path="res://.godot/imported/isisDownWalkFrame1.png-e678923e45483d682dcace32b096b64a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/isis/down/movement/isisDownWalkFrame1.png"
-dest_files=["res://.godot/imported/isisDownWalkFrame1.png-8f0c6875b6295ca28ae630842302a135.ctex"]
+source_file="res://character/Isis/down/movement/isisDownWalkFrame1.png"
+dest_files=["res://.godot/imported/isisDownWalkFrame1.png-e678923e45483d682dcace32b096b64a.ctex"]
 
 [params]
 

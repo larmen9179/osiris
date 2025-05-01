@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmvjap561dvn8"
-path="res://.godot/imported/isisLeft.png-5c76fc287054cd74c9441390f6a48c15.ctex"
+path="res://.godot/imported/isisLeft.png-c68de61b7a3cb1669e099405dda2ce33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/isis/left/idle/isisLeft.png"
-dest_files=["res://.godot/imported/isisLeft.png-5c76fc287054cd74c9441390f6a48c15.ctex"]
+source_file="res://character/Isis/left/idle/isisLeft.png"
+dest_files=["res://.godot/imported/isisLeft.png-c68de61b7a3cb1669e099405dda2ce33.ctex"]
 
 [params]
 
