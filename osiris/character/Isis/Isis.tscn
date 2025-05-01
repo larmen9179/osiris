@@ -1,15 +1,13 @@
-[gd_scene load_steps=21 format=3 uid="uid://fupvqx2ayje4"]
+[gd_scene load_steps=19 format=3 uid="uid://fupvqx2ayje4"]
 
 [ext_resource type="Script" uid="uid://dne3arqosuhvu" path="res://character/isis/playerScript.gd" id="1_t5jci"]
 [ext_resource type="Texture2D" uid="uid://dr7xtv71sbcvs" path="res://character/isis/down/idle/isisDown.png" id="1_tsv24"]
 [ext_resource type="Texture2D" uid="uid://b0ng7u001ruff" path="res://character/isis/down/movement/isisDownWalkFrame1.png" id="2_0nulg"]
-[ext_resource type="PackedScene" uid="uid://b8ny5h8lfald" path="res://items/orbs/scarab/scarab.tscn" id="2_jqrav"]
+[ext_resource type="PackedScene" uid="uid://c7qfdemak1c8m" path="res://items/orbs/scarab/scarab.tscn" id="2_jqrav"]
 [ext_resource type="Texture2D" uid="uid://brkhjyk7402qi" path="res://character/isis/up/idle/isisUp.png" id="2_x27ys"]
-[ext_resource type="PackedScene" uid="uid://cs223rhq1n5ed" path="res://items/orbs/ra/ra.tscn" id="3_iuhnb"]
 [ext_resource type="Texture2D" uid="uid://d0u2pwnqo0h1u" path="res://character/isis/down/movement/isisDownWalkFrame2.png" id="3_jqrav"]
 [ext_resource type="Texture2D" uid="uid://bsxsnij685te3" path="res://character/isis/down/attacks/isisDownRanged.png" id="3_npopq"]
 [ext_resource type="Texture2D" uid="uid://iq6w4o81srvu" path="res://character/isis/left/attacks/isisLeftMeleeOld.png" id="3_psuob"]
-[ext_resource type="PackedScene" uid="uid://dn3apmviqw6tn" path="res://items/orbs/horus/horus.tscn" id="4_a6muw"]
 [ext_resource type="Texture2D" uid="uid://b28lhrpxpph0m" path="res://character/isis/left/attacks/isisLeftRanged.png" id="4_drl6s"]
 [ext_resource type="Texture2D" uid="uid://dumddxwyrcblp" path="res://character/isis/left/idle/isisLeftOld.png" id="5_lf05q"]
 [ext_resource type="Texture2D" uid="uid://drj65n0llw1wj" path="res://character/isis/right/attacks/isisRightMeleeOld.png" id="6_4l6j4"]
@@ -126,21 +124,19 @@ height = 14.0
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_t5jci")
 scarab_scene = ExtResource("2_jqrav")
-ra_scene = ExtResource("3_iuhnb")
-horus_scene = ExtResource("4_a6muw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_nxnpd")
-animation = &"up"
+animation = &"attack_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_h22u4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+zoom = Vector2(5.5, 5.5)
 
 [node name="attackSound1" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_6hy4g")
