@@ -54,8 +54,6 @@ func _physics_process(delta):
 	if shoot_timer > 0:
 		shoot_timer -= delta  
 	
-
-<<<<<<< HEAD
 	#if velocity.length() > 0:
 		#if abs(velocity.x) > abs(velocity.y):
 			#if velocity.x > 0:
@@ -72,12 +70,6 @@ func _physics_process(delta):
 	
 	shoot_timer -= delta  
 	
-
-func _input(event):
-	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_K:
-			use_spell()
-=======
 #detects input
 func _input(event):
 	if event is InputEventKey and event.pressed:
@@ -87,7 +79,7 @@ func _input(event):
 
 #method for playing animation given the users previously pressed direction
 func play_animation():
-	
+	if velocity.length() > 0:
 		if abs(last_direction.x) > abs(last_direction.y):
 			if last_direction.x > 0:
 				$AnimatedSprite2D.play("right")
@@ -98,7 +90,19 @@ func play_animation():
 				$AnimatedSprite2D.play("down")
 			else:
 				$AnimatedSprite2D.play("up")
->>>>>>> b521e7e9e9535cfe7b0d84a8d21af3d88a54c94e
+	else:
+		if abs(last_direction.x) > abs(last_direction.y):
+			if last_direction.x > 0:
+				$AnimatedSprite2D.play("idle_right")
+			else:
+				$AnimatedSprite2D.play("idle_left")
+		else:
+			if last_direction.y > 0:
+				$AnimatedSprite2D.play("idle_down")
+			else:
+				$AnimatedSprite2D.play("idle_up")
+	
+	
 
 #temporary function header
 #func play_attack_animation():

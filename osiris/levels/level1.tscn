@@ -15,8 +15,6 @@ collision_visibility_mode = 1
 
 [node name="isis" parent="." instance=ExtResource("1_grpr4")]
 position = Vector2(49, -57)
-speed = null
-shoot_cooldown = null
 
 [node name="chalice" parent="." instance=ExtResource("5_f45tc")]
 scale = Vector2(0.35, 0.35)
